@@ -1,18 +1,16 @@
-// Lấy các phần tử DOM
-const openModalBtn = document.getElementById("openModalBtn");
+// Lấy tất cả các button có class "openModalBtn"
+const openModalBtns = document.querySelectorAll(".js-buy-ticket");
 const closeModalBtn = document.getElementById("closeModalBtn");
-const modal = document.querySelector(".modal"); // Sử dụng .modal để chọn modal
+const modal = document.querySelector(".modal");
 
-
-openModalBtn.forEach(function(button) {
-    button.addEventListener("click", function() {
-      modal.style.display = 'block';
-    });
+// Thêm sự kiện "click" cho tất cả các button
+openModalBtns.forEach(function(button) {
+  button.addEventListener("click", function() {
+    modal.style.display = 'flex';
   });
-  
-closeModalBtn.addEventListener("click" ,function(){
-    modal.style.display = 'none';
-})
+});
 
-
+closeModalBtn.addEventListener("click", function() {
+  modal.style.display = 'none';
+});
 
