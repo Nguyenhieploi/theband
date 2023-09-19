@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="wrapper">
+      <header>
+            <div id="header">
+                   <ul id="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Band</a></li>
+                    <li><a href="">Tour</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li>
+                        <a href="#">More
+                            <i class="ti-angle-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="">Merchandise</a></li>
+                            <li><a href="">Extras</a></li>
+                            <li><a href="">Media</a></li>
+                        </ul>
+                    </li>
+                   </ul>
+                   <div class="search-menu">
+                     <i class="search-icon ti-search"></i>
+                   </div>
+            </div>
+      </header>
+      <main>
+        <div class="slider">
+          <div class="text-content">
+            <h2 class="text-cotent-heading">New york</h2>
+            <p class="text-description">We had the best time playing at Venice Beach! </p>  
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-section">
+            <h2 class="section-heading">THE BAND</h2>
+            <p class="section-sub">We love music</p>
+            <p class="section-about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.            </p>
+          <div class="team-section">
+            <div class="box">
+              <p>hello</p>
+              <img src="./bandmember.jpg" alt=""/>
+            </div>
+            <div class="box">
+              <p>hello</p>
+              <img src="./bandmember.jpg" alt=""/>
+            </div>
+            <div class="box">
+              <p>hello</p>
+              <img src="./bandmember.jpg" alt=""/>
+            </div>
+          </div>
+          </div>
+          <div class="tour-section">
+            <div class="content-section">
+              <h2 class="section-heading text-white">THE BAND</h2>
+              <p class="section-sub text-white">We love music</p>
+              <ul class="sticket-list">
+                <li>September<span class="sold-out">Sout out</span></li>
+                <li>October<span class="sold-out">Sout out</span></li>
+                <li>November <span class="quantity">3</span></li>
+              </ul>
+              <div class="places-list">
+                <div class="place-item">
+                  <img src="./newyork.jpg" alt="">
+                  <div class="content">
+                    <h3>New York</h3>
+                    <p>Fri 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="buy-sticket" id="openModalBtn"> Buy Sticket</button>
+                  </div>
+                </div>
+                <div class="place-item">
+                  <img src="./newyork.jpg" alt="">
+                  <div class="content">
+                    <h3>New York</h3>
+                    <p>Fri 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="buy-sticket" id="openModalBtn"> Buy Sticket</button>
+                  </div>
+                </div>
+                <div class="place-item">
+                  <img src="./newyork.jpg" alt="">
+                  <div class="content">
+                    <h3>New York</h3>
+                    <p>Fri 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="buy-sticket" id="openModalBtn"> Buy Sticket</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Hiện modal -->
+             <div class="modal">
+              <div class="modal-container">
+                <div class="modal-close" id="closeModalBtn">
+                  <i class="ti-close"></i>
+                </div>
+                <header class="modal-header">
+                  <i class="ti-save-alt"></i>
+                  Ticket
+                </header>
+                <div class="modal-body">
+                  <label for="quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Ticket, $14
+                  </label>
+                  <input type="text" placeholder="How many?" class="modal-input" id="quantity">
+                  <label for="send" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                  </label>
+                  <input type="text" placeholder="Enter email" class="modal-input" id="send">
+                  <button id="pay">PAY</button>
+                </div>
+              </div>
+             </div>
+             <!-- End -->
+            </div>
+          </div>
+        </div>
+        
+      </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

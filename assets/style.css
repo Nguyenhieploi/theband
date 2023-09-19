@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    background: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav{
+    display: inline-block;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav .subnav li:hover a, #nav >  li:hover > a{
+  background: #f0eded;
+  color:#000;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav >li >a {
+    color: white;
+}
+
+#nav .subnav a{
+    color:#000
+}
+
+ #nav .subnav{
+    position: absolute;
+    background: #fcf8f8;
+   display: none;
+}
+
+.subnav li{
+    width: 100%;
+}
+#nav li a{
+    color:white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+
+.search-menu{
+    float: right;
+   padding: 0 21px;
+}
+.search-menu:hover{
+    background: red;
+}
+.search-icon{
+    font-size: 20px;
+    color: white;
+    line-height: 46px !important;
+  
+}
+.slider{
+    margin-top:46px;
+    padding-top:50%;
+    background: url('/chicago.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.text-content{
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.content-section{
+    padding:64px 16px;
+    width: 800px;
+    margin: 0 auto;
+}
+.section-heading{
+    font-size: 30px;
+    margin:10px 0px;
+    font-weight: 300;
+}
+.section-sub{
+    margin: 15px 0px;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.6;
+}
+.section-heading, .section-sub{
+    text-align: center;
+}
+.content .section-about{
+    margin:15px 0px;
+    text-align: justify;
+    line-height: 23px;
+}
+.content .team-section{
+    padding:32px 0px 32px 0px;
+}
+.content .team-section .box p{
+    margin:15px 0px;
+}
+.content .team-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.content .team-section img{
+    width: 60%;
+}
+.text-white{
+    color: white !important;
+}
+.tour-section{
+    background: #000;
+}
+.sticket-list{
+    background: #fff;
+}
+.sticket-list .sold-out{
+    background: #eb4040;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.sticket-list .quantity{
+    background: #000;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+}
+.sticket-list li{
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #c5c5c5cc;
+  list-style: none;
+}
+
+.places-list{
+    padding-top: 32px;
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.place-item .content{
+    background: white;
+    padding-bottom:16px;
+}
+.place-item{
+    padding: 0px 8px;
+    color:#000;
+}
+.place-item h3, p, a{
+    padding: 16px 16px;
+}
+.place-item img{
+    width: 100%;
+    display: block;
+}
+.place-item img:hover{
+    opacity: 0.6;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background: #231f1f70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-container{
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    background: #fff;
+    position: relative;
+}
+.modal-header{
+    background: #009688;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 20px;
+    padding:12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.modal-input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+#pay{
+    border: none;
+    background: #009688;
+    color: white;
+    width: 100%;
+    padding: 15px 0px;
+    cursor: pointer;
+}
